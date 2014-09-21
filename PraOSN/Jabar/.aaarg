@@ -1,0 +1,387 @@
+Segitiga.cpp: In function ‘int main(int, char**)’:
+Segitiga.cpp:73:9: error: no match for ‘operator<<’ (operand types are ‘std::ostream {aka std::basic_ostream<char>}’ and ‘std::pair<int, int>’)
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+         ^
+Segitiga.cpp:73:9: note: candidates are:
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:108:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+       ^
+/usr/include/c++/4.8/ostream:108:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.8/ostream:117:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]
+       operator<<(__ios_type& (*__pf)(__ios_type&))
+       ^
+/usr/include/c++/4.8/ostream:117:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.8/ostream:127:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(ios_base& (*__pf) (ios_base&))
+       ^
+/usr/include/c++/4.8/ostream:127:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.8/ostream:166:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long __n)
+       ^
+/usr/include/c++/4.8/ostream:166:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘long int’
+/usr/include/c++/4.8/ostream:170:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long __n)
+       ^
+/usr/include/c++/4.8/ostream:170:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘long unsigned int’
+/usr/include/c++/4.8/ostream:174:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(bool __n)
+       ^
+/usr/include/c++/4.8/ostream:174:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘bool’
+In file included from /usr/include/c++/4.8/ostream:609:0,
+                 from /usr/include/c++/4.8/istream:39,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:91:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:91:5: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘short int’
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:181:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned short __n)
+       ^
+/usr/include/c++/4.8/ostream:181:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘short unsigned int’
+In file included from /usr/include/c++/4.8/ostream:609:0,
+                 from /usr/include/c++/4.8/istream:39,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:105:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:105:5: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘int’
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:192:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned int __n)
+       ^
+/usr/include/c++/4.8/ostream:192:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘unsigned int’
+/usr/include/c++/4.8/ostream:201:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long long __n)
+       ^
+/usr/include/c++/4.8/ostream:201:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘long long int’
+/usr/include/c++/4.8/ostream:205:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(unsigned long long __n)
+       ^
+/usr/include/c++/4.8/ostream:205:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘long long unsigned int’
+/usr/include/c++/4.8/ostream:220:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(double __f)
+       ^
+/usr/include/c++/4.8/ostream:220:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘double’
+/usr/include/c++/4.8/ostream:224:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(float __f)
+       ^
+/usr/include/c++/4.8/ostream:224:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘float’
+/usr/include/c++/4.8/ostream:232:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(long double __f)
+       ^
+/usr/include/c++/4.8/ostream:232:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘long double’
+/usr/include/c++/4.8/ostream:245:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+       operator<<(const void* __p)
+       ^
+/usr/include/c++/4.8/ostream:245:7: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘const void*’
+In file included from /usr/include/c++/4.8/ostream:609:0,
+                 from /usr/include/c++/4.8/istream:39,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:119:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]
+     basic_ostream<_CharT, _Traits>::
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:119:5: note:   no known conversion for argument 1 from ‘std::pair<int, int>’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+In file included from /usr/include/c++/4.8/string:52:0,
+                 from /usr/include/c++/4.8/bitset:47,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:65,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/basic_string.h:2753:5: note: template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::basic_string<_CharT, _Traits, _Alloc>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.8/bits/basic_string.h:2753:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::pair<int, int>’ is not derived from ‘const std::basic_string<_CharT, _Traits, _Alloc>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:65:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bitset:1521:5: note: template<class _CharT, class _Traits, unsigned int _Nb> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::bitset<_Nb>&)
+     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+     ^
+/usr/include/c++/4.8/bitset:1521:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::pair<int, int>’ is not derived from ‘const std::bitset<_Nb>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:471:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+     ^
+/usr/include/c++/4.8/ostream:471:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::pair<int, int>’)
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:476:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8/ostream:476:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘char’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:482:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)
+     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+     ^
+/usr/include/c++/4.8/ostream:482:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘char’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:488:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)
+     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+     ^
+/usr/include/c++/4.8/ostream:488:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘signed char’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:493:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)
+     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+     ^
+/usr/include/c++/4.8/ostream:493:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘unsigned char’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:513:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+     ^
+/usr/include/c++/4.8/ostream:513:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   mismatched types ‘const _CharT*’ and ‘std::pair<int, int>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/ostream:609:0,
+                 from /usr/include/c++/4.8/istream:39,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/ostream.tcc:321:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)
+     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8/bits/ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘const char*’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:530:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+     ^
+/usr/include/c++/4.8/ostream:530:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘const char*’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:543:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+     ^
+/usr/include/c++/4.8/ostream:543:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘const signed char*’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/istream:39:0,
+                 from /usr/include/c++/4.8/sstream:38,
+                 from /usr/include/c++/4.8/complex:45,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/ostream:548:5: note: template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)
+     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+     ^
+/usr/include/c++/4.8/ostream:548:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘const unsigned char*’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:66:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/complex:524:5: note: template<class _Tp, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::complex<_Tp>&)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+     ^
+/usr/include/c++/4.8/complex:524:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::pair<int, int>’ is not derived from ‘const std::complex<_Tp>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:71:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/iomanip:76:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+     ^
+/usr/include/c++/4.8/iomanip:76:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘std::_Resetiosflags’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:71:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/iomanip:106:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+     ^
+/usr/include/c++/4.8/iomanip:106:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘std::_Setiosflags’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:71:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/iomanip:140:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+     ^
+/usr/include/c++/4.8/iomanip:140:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘std::_Setbase’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:71:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/iomanip:175:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+     ^
+/usr/include/c++/4.8/iomanip:175:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::pair<int, int>’ is not derived from ‘std::_Setfill<_CharT>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:71:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/iomanip:205:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+     ^
+/usr/include/c++/4.8/iomanip:205:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘std::_Setprecision’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:71:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/iomanip:235:5: note: template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)
+     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+     ^
+/usr/include/c++/4.8/iomanip:235:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   cannot convert ‘kiri.std::vector<_Tp, _Alloc>::operator[]<std::pair<int, int>, std::allocator<std::pair<int, int> > >(((std::vector<std::pair<int, int> >::size_type)(greedy ++)))’ (type ‘std::pair<int, int>’) to type ‘std::_Setw’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/valarray:587:0,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__shift_left, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/valarray:587:0,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/valarray:587:0,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::pair<int, int>’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/valarray:587:0,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/c++/4.8/valarray:587:0,
+                 from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__shift_left, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__shift_left, typename _Dom1::value_type>::result_type> std::operator<<(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(<<, __shift_left)
+     ^
+/usr/include/c++/4.8/bits/valarray_after.h:410:5: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘const std::valarray<typename _Dom::value_type>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/valarray:1175:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_left, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_left, _Tp>::result_type> std::operator<<(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(<<, __shift_left)
+ ^
+/usr/include/c++/4.8/valarray:1175:1: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘const std::valarray<_Tp>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/valarray:1175:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_left, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__shift_left, _Tp>::result_type> std::operator<<(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(<<, __shift_left)
+ ^
+/usr/include/c++/4.8/valarray:1175:1: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::ostream {aka std::basic_ostream<char>}’ is not derived from ‘const std::valarray<_Tp>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
+In file included from /usr/include/i386-linux-gnu/c++/4.8/bits/stdc++.h:94:0,
+                 from Segitiga.cpp:1:
+/usr/include/c++/4.8/valarray:1175:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__shift_left, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__shift_left, _Tp>::result_type> std::operator<<(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(<<, __shift_left)
+ ^
+/usr/include/c++/4.8/valarray:1175:1: note:   template argument deduction/substitution failed:
+Segitiga.cpp:73:24: note:   ‘std::pair<int, int>’ is not derived from ‘const std::valarray<_Tp>’
+     cout<<kiri[greedy++]<<(j==i?'\n':' ');
+                        ^
