@@ -12,7 +12,6 @@ typedef vector<char> vc;
 typedef vector<ii> vii;
 typedef vector<vi> vvi;
 typedef vector<bool> vb;
-typedef vector<ll> vll;
  
 //defines
 #define abs(_x) ((_x)<0?-(_x):(_x))
@@ -24,14 +23,13 @@ typedef vector<ll> vll;
 #define INFLL 0x7FFFFFFFFFFFFFFFLL
 #define ceildiv(_a,_b) ((_a)%(_b)==0?(_a)/(_b):((_a)/(_b))+1)
 
-const int BIT_MAX=1000005;
-ll b[1000005];
+int b[51];
 
 void update(int x){
-	for(;x<1000001;x+=x&(-x)) ++b[x];
+	for(;x<51;x+=x&(-x)) ++b[x];
 }
-ll sum(int x){
-	ll ret=0;
+int sum(int x){
+	int ret=0;
 	for(;x;x-=x&(-x)) ret+=b[x];
 	return ret;
 }
@@ -40,26 +38,18 @@ int main(int argc, char **argv){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);	
 	
-	int t,n;
-	ll x,ans;
-	vll v,sorted;
-	map<ll,int> m;
-	while(cin>>n){
+	int t,n,x,ans;
+	cin>>t;
+	while(t--){
 		memset(b,0,sizeof(b));
+		cin>>n;
 		ans=0;
-		v.resize(n);
-		for(int i=0;i<n;++i)
-			cin>>v[i];
-		sorted=v;
-		sort(sorted.begin(),sorted.end());
-		for(int i=0;i<n;++i)
-			m[sorted[i]]=i+1;
 		for(int i=0;i<n;++i){
-			v[i]=m[v[i]];
-			ans+=sum(n-v[i]);
-			update(n-v[i]+1);
+			cin>>x;
+			ans+=sum(n-x);
+			update(n-x+1);
 		}
-		cout<<ans<<'\n';
+		cout<<"Optimal train swapping takes "<<ans<<" swaps.\n";
 	}
 
 	return 0;

@@ -44,7 +44,7 @@ int main(int argc, char **argv){
 	ll x,ans;
 	vll v,sorted;
 	map<ll,int> m;
-	while(cin>>n){
+	while(cin>>n && n){
 		memset(b,0,sizeof(b));
 		ans=0;
 		v.resize(n);
