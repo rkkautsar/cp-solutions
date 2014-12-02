@@ -111,7 +111,7 @@ int main(int argc, char **argv){
 	int cnt=0,ans,x;
 	int c,n;
 	string a,b;
-	while(cin>>c>>n && (c && n)){
+	while(cin>>c>>n && (c>0 || n>0)){
 		UnionFind u(c);
 		m.clear();
 		ans=1;
