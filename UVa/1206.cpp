@@ -104,43 +104,24 @@ bool cmp(point a,point b){
 	return mp(a.x,a.y)<mp(b.x,b.y);
 }
 
-vector<point> monotone_chain(vector<point> p){
-	sort(p.begin(),p.end(),cmp);
-	
-	vector<point> upper,lower;
-	int n=p.size();
-	for(int i=0;i<n;++i){
-		while(upper.size()>=2 && cross(upper[upper.size()-2],upper[upper.size()-1],p[i])>=0) upper.pop_back();
-		upper.push_back(p[i]);
-	}
-
-	for(int i=n-1;i>=0;--i){
-		while(lower.size()>=2 && cross(lower[lower.size()-2],lower[lower.size()-1],p[i])>=0) lower.pop_back();
-		lower.push_back(p[i]);
-	}
-
-	for(int i=1;i<lower.size();++i)upper.push_back(lower[i]);
-
-	return upper;
-}
+#define MAX_IN 100000
+stringstream ss,conv;
+point p[MAX_IN+5],hull[MAX_IN+5];
 
 int main(int argc, char **argv){
 	ios_base::sync_with_stdio(0);
 	cin.tie(0);	
 	
-	stringstream ss,conv;
-	string s,a,b;
+	string s,a,b,dum;
 
 	double x,y;
 
-	int n;
-
-	vector<point> polygon,hull;
+	int n,upper,tmp;
 
 	while(getline(cin,s)){
-		polygon.clear();
-		polygon.reserve(1024);
+		ss.clear();
 		ss<<s;
+		n=0;
 		while(ss>>s){
 			// format: (#,#)
 			for(int i=s.size()-2;i>0;--i)
@@ -152,15 +133,28 @@ int main(int argc, char **argv){
 			conv<<' '<<a<<' '<<b<<' ';
 			conv>>x>>y;
 
-			polygon.push_back(point(x,y));
+			p[n++]=point(x,y);
 		}
 
-		hull=monotone_chain(polygon);
+		sort(p,p+n,cmp);
 
-		n=hull.size();
+		tmp=0;
+		for(int i=0;i<n;++i){
+			while(tmp>=2 && cross(hull[tmp-2],hull[tmp-1],p[i])>=0) --tmp;
+			hull[tmp++]=p[i];
+		}
+
+		upper=tmp;
+
+		for(int i=n-2;i>=0;--i){
+			while(tmp>upper && cross(hull[tmp-2],hull[tmp-1],p[i])>=0) --tmp;
+			hull[tmp++]=p[i];
+		}
+
+		n=tmp;
 
 		for(int i=0;i<n;++i)
-			cout<<fixed<<setprecision(3)<<"("<<hull[i].x<<","<<hull[i].y<<")"<<(i==n-1?'\n':' ');
+			cout<<"("<<hull[i].x<<","<<hull[i].y<<")"<<(i==n-1?'\n':' ');
 	}	
 
 	return 0;
